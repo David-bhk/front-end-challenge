@@ -9,14 +9,77 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 100vh;
+  /* padding: 20px; */
+}
+.profile-content {
+  padding: 50px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.rounded-img {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+img {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+.container {
+  background-color: hsl(0, 0%, 12%);
+  overflow: hidden;
+  border-radius: 12px;
+  /* height: 80vh; */
 }
 
-.container {
+.buttons {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 15px;
+  width: 100%; /* Set a fixed width for better appearance */
+  margin: 12px auto; /* Center it on the page */
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+  margin-top: 10px;
+}
+#address {
+  color: hsl(75, 94%, 57%);
+  margin-bottom: 15px;
+}
+p {
+  color: hsl(0, 0%, 100%);
+}
+
+.buttons div {
   background-color: hsl(0, 0%, 20%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.buttons div a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  display: block;
+}
+
+.buttons div:hover {
+  background-color: hsl(75, 94%, 57%);
+  transform: scale(1.05);
+}
+.buttons div:hover a {
+  color: black; /* Change text color to black on hover */
 }
 
 .attribution {
+  color: hsl(0, 0%, 100%);
   font-size: 11px;
   text-align: center;
 }
